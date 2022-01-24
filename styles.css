@@ -62,8 +62,8 @@ The front page of the game site
 
 @media(max-width:768px){
 	.game-container{
-		height:50%;
-		align-items:flex-start;
+		height:100%;
+		align-items:center;
 	}
 	
 	.game-btn{
