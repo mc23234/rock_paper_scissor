@@ -2,13 +2,89 @@
 <html lang = 'en'>
 	<head>
 		<meta charset = "UTF-8">
+		<meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
 		<title>Rock Paper Scissor game</title>
 		<script src = "index.js" defer></script>
-		
-
+		<link rel = 'stylesheet' href = 'styles.css'>
+		<link href="https://fonts.googleapis.com/css2?family=Knewave&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	
 	<body>
+
+<!--
+		The front page of the game site
+-->
+
+		<div class = 'intro'>
+			
+			<h1 class = 'title'>Rock Paper Scissor</h1>
+			
+			<div class = 'game-container'>
+				
+				<button class = 'game-btn button' >Let's Play</button>
+				
+				<div class = "rules-info">
+					<embed class = 'wiki-page' type = 'text/html' src = "https://en.wikipedia.org/wiki/Rock_paper_scissors">
+					<p>Rules and info of the game</p>
+				</div>
+			
+			</div>
 		
+		</div>
+		
+<!--
+		The main page of the game site
+-->
+		
+		<div class = 'main'>
+			
+			<button class = "back-btn button">Back</button>
+			
+			<div class = 'main-container'>
+				<h1 class = 'game-info'>First to 5 points wins</h1>
+		
+				<div class = 'score'>
+					<div class = 'C-score'>Computer's score <br> 0</div>
+					<div class = "running-result">
+						<div class = 'computer-icon'>CI</div>
+						<div class = 'result-display'>R</div>
+						<div class = 'player-icon'>PI</div>
+					</div>
+					<div class = 'P-score'>Player's score <br> 0</div>
+				</div>
+		
+			
+				<div class = 'options'>
+					<button class = 'option-btn'>
+						<i class="fa fa-hand-grab-o icon"></i>
+						<p>Rock</p>
+					</button>
+					<button class = 'option-btn'>
+						<i class="fa fa-hand-paper-o icon"></i>
+						<p>Paper</p>
+					</button>
+					<button class = 'option-btn'>
+						<i class="fa fa-hand-scissors-o icon"></i>
+						<p>Scissor</p>
+					</button>
+				</div>
+			</div>	
+		</div>
+		
+<!--
+	Last page of the game
+-->
+	
+		<div class = 'exit'>
+			<div class = 'canvas'></div>
+			<button class = 'retry-btn button'>Retry</button>
+			<button class = 'main-btn button'>Main Menu</button>
+		</div>
+		
+<!--
+	footer section
+-->
+		<footer class = 'footer'>&copy; Odin project 2022</footer>
 	</body>
 </html>

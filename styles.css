@@ -1,0 +1,164 @@
+*{
+	--grey:#262a10;
+	--velvet:#283f3b;
+}
+
+body{
+	margin:0;
+	color:white;
+	font-family:'Roboto',serif;
+	background-image:linear-gradient(45deg,rgba(32,21,53,0.85),rgba(211,53,12,0.85)),url(andrey-metelev-DEuansgqjns-unsplash.jpg);
+	background-color:var(--grey);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	text-align:center;
+	font-family: 'Syncopate', sans-serif;
+}
+
+
+.intro,.main,.exit{
+	height:92vh;
+}
+
+/*
+The front page of the game site
+*/
+
+.intro{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+}
+
+.intro .title{
+	font-size:3rem;	
+}
+
+.game-container{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	width:100%;
+	height:100%;
+}
+
+.button{
+	display:block;
+	padding:1.5rem;
+	font-size:1.25rem;
+	height:5rem;
+	width:20%;
+	color:white;
+	font-family: 'Syncopate', sans-serif;
+	background:rgba(255,255,255,0.5);
+	border-radius:2.5rem;
+}
+
+.button:hover{
+	background:#556f44;
+}
+
+.intro .rules-info{
+	width:50%;
+	height:50%;
+}
+
+.intro .wiki-page{
+	width:100%;
+	height:100%;
+	border:5px solid black;
+	border-radius:2rem;
+}
+
+.intro .game-rules-info{
+	color:white;
+	text-decoration:none;
+	font-size:2rem;
+}
+
+
+/*
+The main game page
+*/
+
+.main{
+	display:none;
+}
+
+.main .main-container{
+	clear:left;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+	height:100%;
+}
+
+.main .game-info{
+	margin:0;
+}
+
+.main .back-btn{
+	display:inline-block;
+	float:left;
+	font-size:1rem;
+	padding:1rem;
+	width:7.5rem;
+	height:3rem;
+	border-radius:1.5rem;
+	border:none;
+}
+
+.main .score,.running-result{
+	height:40%;
+	width:100%;
+}
+
+.main .score{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+.main .score .running-result{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.main .option-btn{
+	background:rgba(255,255,255,0.5);
+	border-radius:1rem;
+	padding:1rem;
+}
+
+.main .icon{
+	font-size:10rem;
+	color:black;	
+}
+
+.main .option-btn p{
+	color:black;
+	font-size:1.5rem;
+	font-weight:bold;
+	font-family: 'Syncopate', sans-serif;
+}
+.exit{
+	display:none;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+.exit .canvas{
+	height:25%;
+	font-size:4rem;
+}
+
+.footer{
+	display:flex;
+	align-items:center;
+	height:8vh;
+	color:white;
+}
